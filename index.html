@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <button onclick="getPersonAge()">Get Person Age</button>
+
+    
+
+    
+</head>
+<body>
+    
+</body>
+<script>
+
+    const getPersonAge = () => {
+       const userAge = +prompt("Enter age of person");
+       let result = 0;
+
+       if(userAge >= 18 && userAge <= 20)
+       {
+        console.log("شما فعلا جوان هستید. خدا را شکر کنید");
+       }
+       else if(userAge < 18)
+       {
+        console.log("چطوری عمویی؟");
+       }
+       
+       result = userAge + 56;
+
+       console.log(`شما تا 56 سال دیگر پیر میشوید و ${result} ساله میشوید. شاید هم مرده باشید. روحتان شاد.`);
+
+    }   
+
+    
+
+</script>
+</html>
